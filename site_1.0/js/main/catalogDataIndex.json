@@ -1,0 +1,58 @@
+[
+  {
+    "id_product": 2,
+    "name_product": "T-short",
+    "img_product": "img/product-2.jpg",
+    "cost_product": 10,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 3,
+    "name_product": "Blouse",
+    "img_product": "img/product-3.jpg",
+    "cost_product": 20,
+    "pol_product": "woman"
+  },
+  {
+    "id_product": 4,
+    "name_product": "Coat",
+    "img_product": "img/product-4.jpg",
+    "cost_product": 62,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 5,
+    "name_product": "Blouse",
+    "img_product": "img/product-5.jpg",
+    "cost_product": 22,
+    "pol_product": "woman"
+  },
+  {
+    "id_product": 6,
+    "name_product": "Blouse",
+    "img_product": "img/product-6.jpg",
+    "cost_product": 23,
+    "pol_product": "woman"
+  },
+  {
+    "id_product": 7,
+    "name_product": "Jacket",
+    "img_product": "img/product-7.jpg",
+    "cost_product": 35,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 8,
+    "name_product": "Pants",
+    "img_product": "img/product-8.jpg",
+    "cost_product": 26,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 9,
+    "name_product": "Pullover",
+    "img_product": "img/product-9.jpg",
+    "cost_product": 31,
+    "pol_product": "man"
+  }
+]

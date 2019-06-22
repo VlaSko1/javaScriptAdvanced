@@ -1,0 +1,66 @@
+[
+  {
+    "id_product": 43,
+    "name_product": "Coat",
+    "img_product": "img/product-43.jpg",
+    "cost_product": 70,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 44,
+    "name_product": "Coat",
+    "img_product": "img/product-44.jpg",
+    "cost_product": 66,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 4,
+    "name_product": "Coat",
+    "img_product": "img/product-4.jpg",
+    "cost_product": 62,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 45,
+    "name_product": "T-short",
+    "img_product": "img/product-45.jpg",
+    "cost_product": 11,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 9,
+    "name_product": "Pullover",
+    "img_product": "img/product-9.jpg",
+    "cost_product": 31,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 47,
+    "name_product": "Pullover",
+    "img_product": "img/product-47.jpg",
+    "cost_product": 35,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 7,
+    "name_product": "Jacket",
+    "img_product": "img/product-7.jpg",
+    "cost_product": 35,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 49,
+    "name_product": "Coat",
+    "img_product": "img/product-49.jpg",
+    "cost_product": 57,
+    "pol_product": "man"
+  },
+  {
+    "id_product": 50,
+    "name_product": "T-short",
+    "img_product": "img/product-50.jpg",
+    "cost_product": 12,
+    "pol_product": "man"
+  }
+  
+]

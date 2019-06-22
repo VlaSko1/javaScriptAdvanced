@@ -1,0 +1,31 @@
+[
+  {
+    "id_product": 54,
+    "name_product": "BLAZE LEGGINGS",
+    "img_product": "img/product-54.jpg",
+    "cost_product": 18,
+    "pol_product": "woman"
+  },
+  {
+    "id_product": 55,
+    "name_product": "ALEXA SWEATER",
+    "img_product": "img/product-55.jpg",
+    "cost_product": 21,
+    "pol_product": "woman"
+  },
+  {
+    "id_product": 56,
+    "name_product": "AGNES TOP",
+    "img_product": "img/product-56.jpg",
+    "cost_product": 28,
+    "pol_product": "woman"
+  },
+  {
+    "id_product": 57,
+    "name_product": "SYLVA SWEATER",
+    "img_product": "img/product-57.jpg",
+    "cost_product": 24,
+    "pol_product": "woman"
+  }
+  
+]

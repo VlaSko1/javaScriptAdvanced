@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+  <div id="app">
+  <header>
+    <div class="button__wrap">
+        <filter-catalog :user-search="searchLine" @filter="filter"></filter-catalog>
+    <button class="btn-cart" type="button" @click="isVisibleCart = !isVisibleCart">Корзина</button>
+    <cart 
+        :products-cart="productsCart"
+        :img="imgCart" 
+        :is-visible-cart="isVisibleCart"
+        @remove="remove"></cart>
+  </div>
+  </header>
+  <main>
+    <products :products="filtered" :img="imgCatalog" @add-product="addProduct"></products>
+  </main>
+</div>
+  <script src="vue.js"></script>
+  <script src="js/CartComp.js"></script>
+  <script src="js/ProductsComp.js"></script>
+  <script src="js/FilterComp.js"></script>
+  <script scr="js/ErrorComp.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" 
+    integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous">
+  </script> 
+  
+
+</body>
+</html>

@@ -71,20 +71,30 @@ Vue.component('main_menu', {
           </ul>
       </div>
       <div class="drop-flex">
+          <h3 class="drop__heading">MAN</h3>
+          <ul class="drop__menu">
+              <li><a href="product.html" class="drop__link">Dresses</a></li>
+              <li><a href="product.html" class="drop__link">Tops</a></li>
+              <li><a href="product.html" class="drop__link">Sweaters/Knits</a></li>   
+              <li><a href="product.html" class="drop__link">Jackets/Coats</a></li>
+              <li><a href="product.html" class="drop__link">Blazers</a></li>
+              <li><a href="product.html" class="drop__link">Denim</a></li>
+              <li><a href="product.html" class="drop__link">Leggings/Pants</a></li>
+              <li><a href="product.html" class="drop__link">Skirts/Shorts</a></li>        
+              <li><a href="product.html" class="drop__link">Accessories </a></li>
+              
+          </ul>
+      </div>
+      <div class="drop-flex">
               <h3 class="drop__heading">MAN</h3>
               <ul class="drop__menu">
                   <li><a href="product.html" class="drop__link">Dresses</a></li>
                   <li><a href="product.html" class="drop__link">Tops</a></li>
                   <li><a href="product.html" class="drop__link">Sweaters/Knits</a></li>   
                   <li><a href="product.html" class="drop__link">Jackets/Coats</a></li>
-                  <li><a href="product.html" class="drop__link">Blazers</a></li>
-                  <li><a href="product.html" class="drop__link">Denim</a></li>
-                  <li><a href="product.html" class="drop__link">Leggings/Pants</a></li>
-                  <li><a href="product.html" class="drop__link">Skirts/Shorts</a></li>        
-                  <li><a href="product.html" class="drop__link">Accessories </a></li>
-                  
+                                    
               </ul>
-             
+             <a href="product.html" class="drop__sale"><img src="img/sale.jpg"></a>
       </div>
       
   </div></li>

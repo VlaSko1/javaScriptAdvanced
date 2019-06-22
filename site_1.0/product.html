@@ -11,55 +11,16 @@
     <script src="https://use.fontawesome.com/1badb5fc80.js"></script>
 </head>
 <body>
-   <div class="wrapper" id="product_app"><div class="top">
+   <div class="wrapper" id="main_app"><div class="top">
     <header class="header">
         <div class="container header__container">
             <div class="header__left">
                 <a href="index.html" class="logo"><img class="logo__img" src="img/logo.png" alt="logo"><span
                         class="logo__text">BRAN</span><span class="logo__d">D</span></a>
-                <form class="header__form" action="#">                   
-                    <browse ref="browse"></browse>   
-                    <input class="header__form-input" placeholder="Search for Item..." type="text">
-                    <button class="header__form-button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </form>
+                <filter-el-pr ref="filter-el-pr"></filter-el-pr>
             </div>
             <div class="header__right">
-                <div class="header__right-img"><a href="cart.html"> <img src="img/cart.svg" alt="cart"></a>
-                <div class="drop__cart">
-                    <div class="drop__cart__product">
-                        <a href="single-page.html"><img src="img/product-43-mini.jpg" alt="product-43-mini" class="cart__product__img"></a>
-                        <div class="product__text">
-                            <a href="single-page.html" class="product__text__h6">Rebox Zane</a>
-                            <p class="product__text__score">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                            </p>
-                            <p class="product__text__cost">1  <span>x</span>   $250</p>
-                        </div>
-                        <div class="product__delite"> <i class="fa fa-times-circle" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="drop__cart__product">
-						<a href="single-page.html"><img src="img/product-44-mini.jpg" alt="product-43-mini" class="cart__product__img"></a>
-                        <div class="product__text">
-                            <a href="single-page.html" class="product__text__h6">Rebox Zane</a>
-                            <p class="product__text__score">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                            </p>
-                            <p class="product__text__cost">1  <span>x</span>   $250</p>
-                        </div>
-                        <div class="product__delite"> <i class="fa fa-times-circle" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="drop__cart__total"><h6>TOTAL</h6> 			        <h6>$500.00</h6></div> 
-                    <a href="checkout.html" class="drop__cart__product__checout">Checkout</a>
-                    <a href="cart.html" class="drop__cart__product__go-to-cart">Go to cart</a>
-                </div></div>
+                <cart ref="cart"></cart>
                 <a class="button" href="#">My Account<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
             </div>
         </div>
@@ -83,58 +44,7 @@
     </div>   
     <div class="product__main">
         <div class="product__main__container container">
-            <section class="sidebar">
-                <details class="sidebar__element" open><summary class="sidebar__element__summary">
-                    <h3 class="sidebar__nomen">Category</h3>
-                </summary>
-                <ul class="sidebar__list">
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Bags</a></li>
-                    <li><a href="#">Denim</a></li>
-                    <li><a href="#">Hoodies & Sweatshirts</a></li>
-                    <li><a href="#">Jackets & Coats</a></li>
-                    <li><a href="#">Pants</a></li>
-                    <li><a href="#">Polos</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">Shorts</a></li>
-                    <li><a href="#">Sweaters & Knits</a></li>
-                    <li><a href="#">T-Shirts</a></li>
-                    <li><a href="#">Tanks</a></li>
-                </ul>
-            </details>
-            <details class="sidebar__element"><summary class="sidebar__element__summary">
-                    <h3 class="sidebar__nomen">BRAND</h3>
-                </summary>
-                <ul class="sidebar__list">
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Bags</a></li>
-                    <li><a href="#">Denim</a></li>
-                    <li><a href="#">Hoodies & Sweatshirts</a></li>
-                    <li><a href="#">Jackets & Coats</a></li>
-                    <li><a href="#">Pants</a></li>
-                    <li><a href="#">Polos</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">Shorts</a></li>
-                    
-                </ul>
-            </details>
-            <details class="sidebar__element"><summary class="sidebar__element__summary">
-                    <h3 class="sidebar__nomen">dESIGNER</h3>
-                </summary>
-                <ul class="sidebar__list">
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Bags</a></li>
-                    <li><a href="#">Denim</a></li>
-                    <li><a href="#">Hoodies & Sweatshirts</a></li>
-                    <li><a href="#">Jackets & Coats</a></li>
-                    <li><a href="#">Pants</a></li>
-                    <li><a href="#">Polos</a></li>
-                   
-                </ul>
-            </details>
-            </section>
+            <sidebar-el ref="sidebar-el"></sidebar-el>
             <div class="product__main__center">
                 <section class="product__main__center__filter">
                     <div class="filter__trending">
@@ -175,115 +85,7 @@
 
                     </div> 
                 </section>
-                <div class="product__main__center__product">
-                    <div class="products__product">
-                    <a href="single-page.html" class="product__link"><img class="product__img" src="img/product-43.jpg" alt="product-43"></a>
-                    <div class="product__info">
-                    <a href="single-page.html" class="product__text">Mango People T-shirt</a>
-                    <span class="product__cost">$52.00</span>
-                    </div> <div class="product__actions">
-                        <a href="#" class="product__add"><img src="img/white_cart.svg" alt="cart_add">Add to Cart</a>
-                        <a href="#" class="product__action__circle-white"><img src="img/arrows_circle.svg" alt="arrows_circle.svg"></a>
-                        <a href="#" class="product__action__heart-white"><img src="img/heart.svg" alt="heart.svg"></a>
-                    </div>
-                    </div>
-                    <div class="products__product">
-                        <a href="single-page.html" class="product__link"><img class="product__img" src="img/product-44.jpg" alt="product-44"></a>
-                        <div class="product__info">
-                            <a href="single-page.html" class="product__text">Mango People T-shirt</a>
-                            <span class="product__cost">$52.00</span>
-                        </div>
-                        <div class="product__actions">
-                            <a href="#" class="product__add"><img src="img/white_cart.svg" alt="cart_add">Add to Cart</a>
-                            <a href="#" class="product__action__circle-white"><img src="img/arrows_circle.svg" alt="arrows_circle.svg"></a>
-                            <a href="#" class="product__action__heart-white"><img src="img/heart.svg" alt="heart.svg"></a>
-                        </div>
-                    </div>
-                    <div class="products__product">
-                        <a href="single-page.html" class="product__link"><img class="product__img" src="img/product-4.jpg" alt="product-4"></a>
-                        <div class="product__info">
-                            <a href="single-page.html" class="product__text">Mango People T-shirt</a>
-                            <span class="product__cost">$52.00</span>
-                        </div>
-                        <div class="product__actions">
-                            <a href="#" class="product__add"><img src="img/white_cart.svg" alt="cart_add">Add to Cart</a>
-                            <a href="#" class="product__action__circle-white"><img src="img/arrows_circle.svg" alt="arrows_circle.svg"></a>
-                            <a href="#" class="product__action__heart-white"><img src="img/heart.svg" alt="heart.svg"></a>
-                        </div>
-                    </div>
-                    <div class="products__product">
-                        <a href="single-page.html" class="product__link"><img class="product__img" src="img/product-45.jpg" alt="product-45"></a>
-                        <div class="product__info">
-                            <a href="single-page.html" class="product__text">Mango People T-shirt</a>
-                            <span class="product__cost">$52.00</span>
-                        </div>
-                        <div class="product__actions">
-                            <a href="#" class="product__add"><img src="img/white_cart.svg" alt="cart_add">Add to Cart</a>
-                            <a href="#" class="product__action__circle-white"><img src="img/arrows_circle.svg" alt="arrows_circle.svg"></a>
-                            <a href="#" class="product__action__heart-white"><img src="img/heart.svg" alt="heart.svg"></a>
-                        </div>
-                    </div>
-                    <div class="products__product">
-                        <a href="single-page.html" class="product__link"><img class="product__img" src="img/product-9.jpg" alt="product-9"></a>
-                        <div class="product__info">
-                            <a href="single-page.html" class="product__text">Mango People T-shirt</a>
-                            <span class="product__cost">$52.00</span>
-                        </div>
-                        <div class="product__actions">
-                            <a href="#" class="product__add"><img src="img/white_cart.svg" alt="cart_add">Add to Cart</a>
-                            <a href="#" class="product__action__circle-white"><img src="img/arrows_circle.svg" alt="arrows_circle.svg"></a>
-                            <a href="#" class="product__action__heart-white"><img src="img/heart.svg" alt="heart.svg"></a>
-                        </div>
-                    </div>
-                    <div class="products__product">
-                        <a href="single-page.html" class="product__link"><img class="product__img" src="img/product-47.jpg" alt="product-47"></a>
-                        <div class="product__info">
-                            <a href="single-page.html" class="product__text">Mango People T-shirt</a>
-                            <span class="product__cost">$52.00</span>
-                        </div>
-                        <div class="product__actions">
-                            <a href="#" class="product__add"><img src="img/white_cart.svg" alt="cart_add">Add to Cart</a>
-                            <a href="#" class="product__action__circle-white"><img src="img/arrows_circle.svg" alt="arrows_circle.svg"></a>
-                            <a href="#" class="product__action__heart-white"><img src="img/heart.svg" alt="heart.svg"></a>
-                        </div>
-                    </div>
-                    <div class="products__product">
-                        <a href="single-page.html" class="product__link"><img class="product__img" src="img/product-7.jpg" alt="product-7"></a>
-                        <div class="product__info">
-                            <a href="single-page.html" class="product__text">Mango People T-shirt</a>
-                            <span class="product__cost">$52.00</span>
-                        </div>
-                        <div class="product__actions">
-                            <a href="#" class="product__add"><img src="img/white_cart.svg" alt="cart_add">Add to Cart</a>
-                            <a href="#" class="product__action__circle-white"><img src="img/arrows_circle.svg" alt="arrows_circle.svg"></a>
-                            <a href="#" class="product__action__heart-white"><img src="img/heart.svg" alt="heart.svg"></a>
-                        </div>
-                    </div>
-                    <div class="products__product">
-                            <a href="single-page.html" class="product__link"><img class="product__img" src="img/product-49.jpg" alt="product-49"></a>
-                            <div class="product__info">
-                                <a href="single-page.html" class="product__text">Mango People T-shirt</a>
-                                <span class="product__cost">$52.00</span>
-                            </div>
-                            <div class="product__actions">
-                                <a href="#" class="product__add"><img src="img/white_cart.svg" alt="cart_add">Add to Cart</a>
-                                <a href="#" class="product__action__circle-white"><img src="img/arrows_circle.svg" alt="arrows_circle.svg"></a>
-                                <a href="#" class="product__action__heart-white"><img src="img/heart.svg" alt="heart.svg"></a>
-                            </div>
-                        </div>
-                    <div class="products__product">
-                        <a href="single-page.html" class="product__link"><img class="product__img" src="img/product-50.jpg" alt="product-50"></a>
-                        <div class="product__info">
-                            <a href="single-page.html" class="product__text">Mango People T-shirt</a>
-                            <span class="product__cost">$52.00</span>
-                        </div>
-                        <div class="product__actions">
-                            <a href="#" class="product__add"><img src="img/white_cart.svg" alt="cart_add">Add to Cart</a>
-                            <a href="#" class="product__action__circle-white"><img src="img/arrows_circle.svg" alt="arrows_circle.svg"></a>
-                            <a href="#" class="product__action__heart-white"><img src="img/heart.svg" alt="heart.svg"></a>
-                        </div>
-                </div>
-            </div>
+                <products-prod ref="products-prod"></products-prod>
                 <div class="product__main__center__pagination">
                     
                         <ul class="pagination__box__list">
@@ -352,61 +154,16 @@
             </div>
     
         </article></div>
-        <footer class="footer">
-        <div class="footer_container container">
-            <div class="footer__text">
-                <a href="index.html" class="logo"><img class="logo__img" src="img/logo.png" alt="logo"><span
-                    class="logo__text">BRAN</span><span class="logo__d">D</span></a>
-                     <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly syndicate an&nbsp;expanded array of&nbsp;processes and cross-unit partnerships.</p><br> 
-
-                    <p>Efficiently plagiarize 24/365 action items and focused infomediaries.
-                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
-                        
-                      
-                    
-                       </div>
-            <nav class="footer__list">
-                <h4 class="footer__list__h4">COMPANY</h4>
-                <ul class="footer__list__menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">How It Works</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <nav class="footer__list">
-                <h4 class="footer__list__h4">INFORMATION</h4>
-                <ul class="footer__list__menu">
-                    <li><a href="#">Tearms & Condition</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">How to Buy</a></li>
-                    <li><a href="#">How to Sell</a></li>
-                    <li><a href="#">Promotion</a></li>
-                </ul>
-            </nav>
-            <nav class="footer__list">
-                <h4 class="footer__list__h4">SHOP CATEGORY</h4>
-                <ul class="footer__list__menu">
-                    <li><a href="product.html">Men</a></li>
-                    <li><a href="product.html">Women</a></li>
-                    <li><a href="product.html">Child</a></li>
-                    <li><a href="product.html">Apparel</a></li>
-                    <li><a href="product.html">Brows All</a></li>
-                </ul>
-            </nav>
-
-        </div>
-        <div class="footer__douwn">
-				<div class="footer__douwn__container container">
-					<p class="footer__douwn__left">&copy; 2017 Brand All&nbsp;Rights&nbsp;Reserved.</p>
-					<div class="footer__douwn__right"> <a href="https://www.facebook.com" class="footer__douwn__icon" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="https://twitter.com" class="footer__douwn__icon" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="https://www.linkedin.cn/" class="footer__douwn__icon" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> <a href="https://www.pinterest.ru" class="footer__douwn__icon" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a> <a href="https://plus.google.com" class="footer__douwn__icon" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </div>
-				</div>
-			</div>
-    </footer>
+        <footer-comp ref="footer-comp"></footer-comp>
     </div>
     <script src="js/vue.js"></script>
-	<script src="js/main/BlockComp.js"></script>
-	<script src="js/product/main_product.js"></script>
+    <script src="js/main/BlockComp.js"></script>
+    <script src="js/main/CartCompIndex.js"></script>
+    <script src="js/product/SidebarProdComp.js"></script>
+    <script src="js/product/FilterCompProd.js"></script>
+    <script src="js/product/ProductsProdComp.js"></script>
+    <script src="js/main/FooterComp.js"></script>
+    <script src="js/main/main_index.js"></script>
+    
 </body>
 </html>

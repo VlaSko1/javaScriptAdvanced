@@ -1,3 +1,18 @@
 [
-  
+  {
+    "id_product": 43,
+    "name_product": "Coat",
+    "img_product": "img/product-43.jpg",
+    "cost_product": 70,
+    "pol_product": "man",
+    "quantity": 1
+  },
+  {
+    "id_product": 44,
+    "name_product": "Coat",
+    "img_product": "img/product-44.jpg",
+    "cost_product": 66,
+    "pol_product": "man",
+    "quantity": 1
+  }
 ]

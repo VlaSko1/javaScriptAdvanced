@@ -47,21 +47,24 @@ Vue.component('cart', {
                         if(product.quantity > 1){
                             product.quantity--
                         } else {
+                              
                             this.cartItems.splice(this.cartItems.indexOf(product), 1);
-        
+                           
                             
                         }
                     }
                 })
         },
+        clearCart(){
+            this.cartItems = [];
+        }
+       
+        
     },
 
   
-    template:`<div class="header__right-img" 
-                        @mouseover="showCart = !showCart"
-                        @mouseout="showCart = !showCart">
-                    <a href="cart.html"> 
-                    <img  src="img/cart.svg" alt="cart"></a>
+    template:`<div class="header__right-img">
+                    <img  src="img/cart.svg" alt="cart" @click="showCart = !showCart">
                     <div class="cart__count" v-show="showBlockCart">{{calcCount}}</div>
                     <div class="drop__cart"  v-show="showCart" >
                     <p class="cart__text" v-if="!cartItems.length">Cart is empty</p>
